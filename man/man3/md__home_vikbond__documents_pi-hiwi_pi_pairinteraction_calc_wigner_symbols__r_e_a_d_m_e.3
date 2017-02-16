@@ -1,0 +1,98 @@
+.TH "md__home_vikbond__documents_pi-hiwi_pi_pairinteraction_calc_wigner_symbols__r_e_a_d_m_e" 3 "Thu Feb 16 2017" "pairinteraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__home_vikbond__documents_pi-hiwi_pi_pairinteraction_calc_wigner_symbols__r_e_a_d_m_e \- Wigner Symbols 
+\fC\fP \fC\fP
+.PP
+A C++ ensemble of functions to compute the Wigner 3j- and 6j- symbols\&. It reimplements the algorithm designed by Schulten and Gordon in C++, but also contains the original Fortran implementation\&. It can act either as a complete C++ replacement to the original Fortran implementation, or a C++ interface to them\&. See the API docs for details\&. It can either compute an array of Wigner 3j or 6j symbols, or a single coefficient\&. It also computes the Clebsch-Gordan coefficients\&.
+.PP
+Note that there is a third party \fCPython wrapper\fP available on GitHub\&.
+.PP
+.SS "Compilation Instructions"
+.PP
+This library uses CMake to help the build process\&. First, download the source code\&. It is recommended to create a separate directory for building, i\&.e\&. 
+.PP
+.nf
+1 mkdir build/
+2 cd build/
+
+.fi
+.PP
+ Then, run 
+.PP
+.nf
+1 cmake \&.\&. && make && sudo make install
+
+.fi
+.PP
+ By default, the library is installed to \fC/usr/lib/\fP and the include files are in \fC/usr/include/\fP\&. To install to another directory, say \fC/usr/local/\fP, use the command-line argument 
+.PP
+.nf
+1 cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr/local && make && sudo make install
+
+.fi
+.PP
+.PP
+.SS "API documentation"
+.PP
+We list the user-facing functions that compute the Wigner symbols\&. The functions are behind the namespace \fCWignerSymbols\fP\&. Both the C++ implementation (my own) and the original Fortran implementation (by Schulten and Gordon) are provided by this package\&. In my own tests, I had found that the original Fortran implementation provided only \fCsingle\fP precision\&. This might be compiler-dependent, so you might have better luck\&. The Fortran version is also somewhat faster (10% faster, approximately)\&. In any case, this program provides either a complete C++ replacement, or a C++ interface to the evaluation of Wigner symbols\&.
+.PP
+.SS "C++ implementation"
+.PP
+.IP "\(bu" 2
+\fCstd::vector<double> wigner3j(double l2, double l3, double m1, double m2, double m3)\fP
+.br
+ Computes Wigner 3j symbols with all possible values of \fCl1\fP\&. Returns an \fCstd::vector<double>\fP with the coefficients sorted by increasing values of \fCl1\fP\&.
+.IP "\(bu" 2
+\fCdouble wigner3j(double l1, double l2, double l3, double m1, double m2, double m3)\fP
+.br
+ Computes a specific Wigner 3j symbol\&.
+.IP "\(bu" 2
+\fCdouble clebschGordan(double l1, double l2, double l3, double m1, double m2, double m3)\fP
+.br
+ Computes a specific Clebch-Gordan coeffcient\&.
+.IP "\(bu" 2
+\fCstd::vector<double> wigner6j(double l2, double l3, double l4, double l5, double l6)\fP
+.br
+ Computes Wigner 6j symbols with all possible values of \fCl1\fP\&. Returns an \fCstd::vector<double>\fP with the coefficients sorted by increasing values of \fCl1\fP\&.
+.IP "\(bu" 2
+\fCdouble wigner6j(double l1, double l2, double l3, double l4, double l5, double l6)\fP
+.br
+ Computes a specific Wigner 6j symbol\&.
+.PP
+.PP
+.SS "Fortran implementation"
+.PP
+.IP "\(bu" 2
+\fCstd::vector<double> wigner3j_f(double l2, double l3, double m1, double m2, double m3)\fP 
+.br
+ Computes Wigner 3j symbols with all possible values of \fCl1\fP\&.
+.IP "\(bu" 2
+\fCdouble wigner3j_f(double l1, double l2, double l3, double m1, double m2, double m3)\fP
+.br
+ Computes a specific Wigner 3j symbol\&.
+.IP "\(bu" 2
+\fCdouble clebschGordan_f(double l1, double l2, double l3, double m1, double m2, double m3)\fP
+.br
+ Computes a specific Clebch-Gordan coeffcient\&.
+.IP "\(bu" 2
+\fCstd::vector<double> \fBwigner6j_f(double l2, double l3, double l4, double l5, double l6)\fP\fP 
+.br
+ Computes Wigner 6j symbols with all possible values of \fCl1\fP\&.
+.IP "\(bu" 2
+\fCdouble wigner6j_f(double l1, double l2, double l3, double l4, double l5, double l6)\fP
+.br
+ Computes a specific Wigner 6j symbol\&.
+.PP
+.PP
+.SS "Bibliography"
+.PP
+.IP "\(bu" 2
+K\&. Schulten and R\&. G\&. Gordon, \fIRecursive evaluation of 3j and 6j coefficients\fP, Comput\&. Phys\&. Commun\&. \fB11\fP, 269–278 (1976)\&. DOI: \fC10\&.1016/0010-4655(76)90058-8\fP
+.IP "\(bu" 2
+K\&. Schulten, \fIExact recursive evaluation of 3j- and 6j-coefficients for quantum-mechanical coupling of angular momenta\fP, J\&. Math\&. Phys\&. \fB16\fP, 1961 (1975)\&. DOI: \fC10\&.1063/1\&.522426\fP\&.
+.IP "\(bu" 2
+J\&. Luscombe and M\&. Luban, \fISimplified recursive algorithm for Wigner 3j and 6j symbols\fP, Phys\&. Rev\&. E \fB57\fP, 7274–7277 (1998)\&. DOI: \fC10\&.1103/PhysRevE\&.57\&.7274\fP\&. 
+.PP
+

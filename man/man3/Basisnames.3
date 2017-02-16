@@ -1,0 +1,68 @@
+.TH "Basisnames< T >" 3 "Thu Feb 16 2017" "pairinteraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Basisnames< T > \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBconfigure\fP (const \fBConfiguration\fP &config)"
+.br
+.ti -1c
+.RI "size_t \fBsize\fP () const "
+.br
+.ti -1c
+.RI "size_t \fBdim\fP () const "
+.br
+.ti -1c
+.RI "T & \fBget\fP (size_t idx)"
+.br
+.ti -1c
+.RI "const T & \fBget\fP (size_t idx) const "
+.br
+.ti -1c
+.RI "void \fBset\fP (size_t i, const T &v)"
+.br
+.ti -1c
+.RI "\fBConstIter\fP< \fBBasisnames\fP, T > \fBbegin\fP () const "
+.br
+.ti -1c
+.RI "\fBConstIter\fP< \fBBasisnames\fP, T > \fBend\fP () const "
+.br
+.ti -1c
+.RI "const \fBConfiguration\fP & \fBgetConf\fP () const "
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBdelta_n\fP"
+.br
+.ti -1c
+.RI "int \fBdelta_l\fP"
+.br
+.ti -1c
+.RI "int \fBdelta_j\fP"
+.br
+.ti -1c
+.RI "int \fBdelta_m\fP"
+.br
+.ti -1c
+.RI "\fBConfiguration\fP \fBconf\fP"
+.br
+.ti -1c
+.RI "std::vector< T > \fBnames_\fP"
+.br
+.ti -1c
+.RI "size_t \fBdim_\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for pairinteraction from the source code\&.

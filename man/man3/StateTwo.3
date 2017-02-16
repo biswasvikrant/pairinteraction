@@ -1,0 +1,71 @@
+.TH "StateTwo" 3 "Thu Feb 16 2017" "pairinteraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+StateTwo \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBState\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStateTwo\fP (idx_t idx, std::array< int, 2 > n, std::array< int, 2 > l, std::array< float, 2 > s, std::array< float, 2 > j, std::array< float, 2 > m)"
+.br
+.ti -1c
+.RI "\fBStateTwo\fP (std::array< int, 2 > n, std::array< int, 2 > l, std::array< float, 2 > s, std::array< float, 2 > j, std::array< float, 2 > m)"
+.br
+.ti -1c
+.RI "\fBStateTwo\fP (idx_t idx, const \fBStateOne\fP &a, const \fBStateOne\fP &b)"
+.br
+.ti -1c
+.RI "\fBStateTwo\fP (const \fBStateOne\fP &a, const \fBStateOne\fP &b)"
+.br
+.ti -1c
+.RI "\fBStateOne\fP \fBfirst\fP () const "
+.br
+.ti -1c
+.RI "\fBStateOne\fP \fBsecond\fP () const "
+.br
+.ti -1c
+.RI "\fBStateTwo\fP \fBorder\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::array< int, 2 > \fBn\fP"
+.br
+.ti -1c
+.RI "std::array< int, 2 > \fBl\fP"
+.br
+.ti -1c
+.RI "std::array< float, 2 > \fBs\fP"
+.br
+.ti -1c
+.RI "std::array< float, 2 > \fBj\fP"
+.br
+.ti -1c
+.RI "std::array< float, 2 > \fBm\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &out, const \fBStateTwo\fP &state)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBStateTwo\fP &s1, const \fBStateTwo\fP &s2)"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBStateTwo\fP &s1, const \fBStateTwo\fP &s2)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for pairinteraction from the source code\&.

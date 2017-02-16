@@ -1,0 +1,45 @@
+.TH "BasisnamesTwo" 3 "Thu Feb 16 2017" "pairinteraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BasisnamesTwo \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBBasisnames< StateTwo >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBasisnamesTwo\fP (std::shared_ptr< const \fBBasisnamesOne\fP > basis_one1, std::shared_ptr< const \fBBasisnamesOne\fP > basis_one2)"
+.br
+.ti -1c
+.RI "\fBBasisnamesTwo\fP (std::shared_ptr< const \fBBasisnamesOne\fP > basis_one1)"
+.br
+.ti -1c
+.RI "const \fBStateTwo\fP & \fBinitial\fP () const "
+.br
+.ti -1c
+.RI "void \fBremoveUnnecessaryStates\fP (const std::vector< bool > &isNecessary)"
+.br
+.ti -1c
+.RI "void \fBremoveUnnecessaryStatesKeepIdx\fP (const std::vector< bool > &isNecessary)"
+.br
+.ti -1c
+.RI "void \fBsave\fP (std::string path)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbuild\fP (\fBStateTwo\fP startstate, std::array< std::string, 2 > species, std::shared_ptr< const \fBBasisnamesOne\fP > basis_one1, std::shared_ptr< const \fBBasisnamesOne\fP > basis_one2)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for pairinteraction from the source code\&.

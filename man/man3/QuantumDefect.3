@@ -1,0 +1,107 @@
+.TH "QuantumDefect" 3 "Thu Feb 16 2017" "pairinteraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+QuantumDefect \- Quantum defect storage\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <QuantumDefect\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBQuantumDefect\fP (std::string \fBspecies\fP, int \fBn\fP, int \fBl\fP, real_t \fBj\fP)"
+.br
+.RI "\fIConstructor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const std::string & \fBspecies\fP"
+.br
+.RI "\fIAtomic species\&. \fP"
+.ti -1c
+.RI "const int & \fBn\fP"
+.br
+.RI "\fIPrincipal quantum number\&. \fP"
+.ti -1c
+.RI "const int & \fBl\fP"
+.br
+.RI "\fIAngular quantum number\&. \fP"
+.ti -1c
+.RI "const real_t & \fBj\fP"
+.br
+.RI "\fIMagnetic quantum number\&. \fP"
+.ti -1c
+.RI "const real_t & \fBac\fP"
+.br
+.RI "\fIPolarizability\&. \fP"
+.ti -1c
+.RI "const int & \fBZ\fP"
+.br
+.RI "\fICore charge\&. \fP"
+.ti -1c
+.RI "const real_t & \fBa1\fP"
+.br
+.RI "\fIParameter of effective Coulomb potential\&. \fP"
+.ti -1c
+.RI "const real_t & \fBa2\fP"
+.br
+.RI "\fIParameter of effective Coulomb potential\&. \fP"
+.ti -1c
+.RI "const real_t & \fBa3\fP"
+.br
+.RI "\fIParameter of effective Coulomb potential\&. \fP"
+.ti -1c
+.RI "const real_t & \fBa4\fP"
+.br
+.RI "\fIParameter of effective Coulomb potential\&. \fP"
+.ti -1c
+.RI "const real_t & \fBrc\fP"
+.br
+.RI "\fIEffective core size\&. \fP"
+.ti -1c
+.RI "const real_t & \fBnstar\fP"
+.br
+.RI "\fIEffective principal quantum number\&. \fP"
+.ti -1c
+.RI "const real_t & \fBenergy\fP"
+.br
+.RI "\fI\fBState\fP energy\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Quantum defect storage\&. 
+
+The quantum defect queries a database for Rydberg-Ritz coefficients and model potential parameters\&. The Rydberg-Ritz coefficients are not exposed to the outside but included in the energy data member\&.
+.PP
+The slight deviation from the hydrogen atom for Rydberg atoms are captured in the so-called quantum defect\&. The hydrogen energy is given by $ E = \mathrm{Ry}/n^2 $\&. For Rydberg atoms this is slightly modified to $ E^* = \mathrm{Ry}/n^{*2} $ where $ n^* = n - \delta_{nlj} $\&. This correction can be expanded in a series \[ \delta_{nlj} = \delta_0 + \frac{\delta_2}{(n-\delta_0)^2} + \frac{\delta_4}{(n-\delta_0)^4} + \frac{\delta_6}{(n-\delta_0)^6} + \cdots \; \] The coefficients of the series $ \delta_i $ (Rydberg-Ritz coefficients) are loaded from the database\&.
+.PP
+The object also loads the parameters for the model potentials which are used in the \fBNumerov\fP object\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "QuantumDefect::QuantumDefect (std::string species, int n, int l, real_t j)"
+
+.PP
+Constructor\&. Save the input and query the database\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIspecies\fP atomic species of the atom 
+.br
+\fIn\fP principal quantum number 
+.br
+\fIl\fP angular quantum number 
+.br
+\fIj\fP magnetic quantum number 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for pairinteraction from the source code\&.

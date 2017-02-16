@@ -1,0 +1,164 @@
+.TH "Hamiltonianmatrix" 3 "Thu Feb 16 2017" "pairinteraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Hamiltonianmatrix \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBSerializable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP (eigen_sparse_t entries, eigen_sparse_t basis)"
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP (size_t szBasis, size_t szEntries)"
+.br
+.ti -1c
+.RI "eigen_sparse_t & \fBentries\fP ()"
+.br
+.ti -1c
+.RI "const eigen_sparse_t & \fBentries\fP () const "
+.br
+.ti -1c
+.RI "eigen_sparse_t & \fBbasis\fP ()"
+.br
+.ti -1c
+.RI "const eigen_sparse_t & \fBbasis\fP () const "
+.br
+.ti -1c
+.RI "size_t \fBnum_basisvectors\fP () const "
+.br
+.ti -1c
+.RI "size_t \fBnum_coordinates\fP () const "
+.br
+.ti -1c
+.RI "void \fBaddBasis\fP (idx_t row, idx_t col, scalar_t val)"
+.br
+.ti -1c
+.RI "void \fBaddEntries\fP (idx_t row, idx_t col, scalar_t val)"
+.br
+.ti -1c
+.RI "void \fBcompress\fP (size_t nBasis, size_t nCoordinates)"
+.br
+.ti -1c
+.RI "std::vector< \fBHamiltonianmatrix\fP > \fBfindSubs\fP () const "
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP \fBabs\fP () const "
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP \fBchangeBasis\fP (eigen_sparse_t basis) const "
+.br
+.ti -1c
+.RI "void \fBapplyCutoff\fP (real_t cutoff)"
+.br
+.ti -1c
+.RI "void \fBfindUnnecessaryStates\fP (std::vector< bool > &isNecessaryCoordinate) const "
+.br
+.ti -1c
+.RI "void \fBremoveUnnecessaryBasisvectors\fP (const std::vector< bool > &isNecessaryCoordinate)"
+.br
+.ti -1c
+.RI "void \fBremoveUnnecessaryBasisvectors\fP ()"
+.br
+.ti -1c
+.RI "void \fBremoveUnnecessaryStates\fP (const std::vector< bool > &isNecessaryCoordinate)"
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP \fBgetBlock\fP (const std::vector< ptrdiff_t > &indices)"
+.br
+.ti -1c
+.RI "void \fBdiagonalize\fP ()"
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP & \fBoperator+=\fP (const \fBHamiltonianmatrix\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP & \fBoperator\-=\fP (const \fBHamiltonianmatrix\fP &rhs)"
+.br
+.ti -1c
+.RI "bytes_t & \fBserialize\fP ()"
+.br
+.ti -1c
+.RI "void \fBdoSerialization\fP ()"
+.br
+.ti -1c
+.RI "void \fBdeserialize\fP (bytes_t &bytesin)"
+.br
+.ti -1c
+.RI "void \fBdoDeserialization\fP ()"
+.br
+.ti -1c
+.RI "uint64_t \fBhashEntries\fP ()"
+.br
+.ti -1c
+.RI "uint64_t \fBhashBasis\fP ()"
+.br
+.ti -1c
+.RI "void \fBsave\fP (std::string fname)"
+.br
+.ti -1c
+.RI "bool \fBload\fP (std::string fname)"
+.br
+.ti -1c
+.RI "template<typename T , typename std::enable_if< utils::is_complex< T >::value >::type *  = nullptr> void \fBmergeComplex\fP (std::vector< storage_real_t > &real, std::vector< storage_real_t > &imag, std::vector< T > &complex)"
+.br
+.ti -1c
+.RI "template<typename T , typename std::enable_if<!utils::is_complex< T >::value >::type *  = nullptr> void \fBmergeComplex\fP (std::vector< storage_real_t > &real, std::vector< storage_real_t > &imag, std::vector< T > &complex)"
+.br
+.ti -1c
+.RI "template<typename T , typename std::enable_if< utils::is_complex< T >::value >::type *  = nullptr> void \fBsplitComplex\fP (std::vector< storage_real_t > &real, std::vector< storage_real_t > &imag, std::vector< T > &complex)"
+.br
+.ti -1c
+.RI "template<typename T , typename std::enable_if<!utils::is_complex< T >::value >::type *  = nullptr> void \fBsplitComplex\fP (std::vector< storage_real_t > &real, std::vector< storage_real_t > &imag, std::vector< T > &complex)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "eigen_sparse_t \fBentries_\fP"
+.br
+.ti -1c
+.RI "eigen_sparse_t \fBbasis_\fP"
+.br
+.ti -1c
+.RI "bytes_t \fBbytes\fP"
+.br
+.ti -1c
+.RI "std::vector< eigen_triplet_t > \fBtriplets_basis\fP"
+.br
+.ti -1c
+.RI "std::vector< eigen_triplet_t > \fBtriplets_entries\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP \fBoperator+\fP (\fBHamiltonianmatrix\fP lhs, const \fBHamiltonianmatrix\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP \fBoperator\-\fP (\fBHamiltonianmatrix\fP lhs, const \fBHamiltonianmatrix\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP \fBoperator*\fP (const scalar_t &lhs, \fBHamiltonianmatrix\fP rhs)"
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP \fBoperator*\fP (\fBHamiltonianmatrix\fP lhs, const scalar_t &rhs)"
+.br
+.ti -1c
+.RI "\fBHamiltonianmatrix\fP \fBcombine\fP (const \fBHamiltonianmatrix\fP &lhs, const \fBHamiltonianmatrix\fP &rhs, const real_t &deltaE, std::shared_ptr< \fBBasisnamesTwo\fP > basis_two, const \fBSymmetry\fP &sym)"
+.br
+.ti -1c
+.RI "void \fBenergycutoff\fP (const \fBHamiltonianmatrix\fP &lhs, const \fBHamiltonianmatrix\fP &rhs, const real_t &deltaE, std::vector< bool > &necessary)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for pairinteraction from the source code\&.

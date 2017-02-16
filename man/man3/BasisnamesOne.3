@@ -1,0 +1,54 @@
+.TH "BasisnamesOne" 3 "Thu Feb 16 2017" "pairinteraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BasisnamesOne \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBBasisnames< StateOne >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::vector< \fBStateOne\fP > & \fBinitial\fP () const "
+.br
+.ti -1c
+.RI "void \fBremoveUnnecessaryStates\fP (const std::vector< bool > &is_necessary)"
+.br
+.ti -1c
+.RI "bool \fBconstructedFromFirst\fP ()"
+.br
+.ti -1c
+.RI "void \fBsave\fP (std::string path)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBBasisnamesOne\fP \fBfromStates\fP (std::vector< \fBStateOne\fP > names)"
+.br
+.ti -1c
+.RI "static \fBBasisnamesOne\fP \fBfromFirst\fP (const \fBConfiguration\fP &config)"
+.br
+.ti -1c
+.RI "static \fBBasisnamesOne\fP \fBfromFirst\fP (std::shared_ptr< const \fBBasisnamesTwo\fP > basis_two)"
+.br
+.ti -1c
+.RI "static \fBBasisnamesOne\fP \fBfromSecond\fP (const \fBConfiguration\fP &config)"
+.br
+.ti -1c
+.RI "static \fBBasisnamesOne\fP \fBfromSecond\fP (std::shared_ptr< const \fBBasisnamesTwo\fP > basis_two)"
+.br
+.ti -1c
+.RI "static \fBBasisnamesOne\fP \fBfromBoth\fP (const \fBConfiguration\fP &config)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for pairinteraction from the source code\&.

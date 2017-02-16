@@ -1,0 +1,71 @@
+.TH "Configuration" 3 "Thu Feb 16 2017" "pairinteraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Configuration \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBconst_iterator\fP"
+.br
+.ti -1c
+.RI "class \fBiterator\fP"
+.br
+.ti -1c
+.RI "class \fBvalue\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBload_from_json\fP (std::string filename)"
+.br
+.ti -1c
+.RI "void \fBsave_to_json\fP (std::string filename)"
+.br
+.ti -1c
+.RI "\fBConfiguration::value\fP & \fBoperator[]\fP (const std::string &key)"
+.br
+.ti -1c
+.RI "const \fBConfiguration::value\fP & \fBoperator[]\fP (const std::string &key) const "
+.br
+.ti -1c
+.RI "size_t \fBsize\fP () const "
+.br
+.ti -1c
+.RI "\fBConfiguration::iterator\fP \fBfind\fP (const std::string &key)"
+.br
+.ti -1c
+.RI "\fBConfiguration::const_iterator\fP \fBfind\fP (const std::string &key) const "
+.br
+.ti -1c
+.RI "\fBConfiguration::iterator\fP \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "\fBConfiguration::iterator\fP \fBend\fP ()"
+.br
+.ti -1c
+.RI "\fBConfiguration::const_iterator\fP \fBbegin\fP () const "
+.br
+.ti -1c
+.RI "\fBConfiguration::const_iterator\fP \fBend\fP () const "
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBConfiguration\fP &rhs) const "
+.br
+.ti -1c
+.RI "\fBConfiguration\fP & \fBoperator+=\fP (const \fBConfiguration\fP &rhs)"
+.br
+.ti -1c
+.RI "size_t \fBcount\fP (const std::string &key) const "
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for pairinteraction from the source code\&.

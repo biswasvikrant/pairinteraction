@@ -1,0 +1,82 @@
+.TH "/home/vikbond/Documents/pi-hiwi/pi/pairinteraction/calc/wignerSymbols/include/wignerSymbols/wignerSymbols-cpp.h" 3 "Thu Feb 16 2017" "pairinteraction" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/vikbond/Documents/pi-hiwi/pi/pairinteraction/calc/wignerSymbols/include/wignerSymbols/wignerSymbols-cpp.h \- Defines utility functions for the evaluation of Wigner-3j and -6j symbols\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cmath>\fP
+.br
+\fC#include <limits>\fP
+.br
+\fC#include <algorithm>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Functions"
+
+.PP
+.RI "\fBEvaluation of Wigner-3j and -6j symbols\&.\fP"
+.br
+We implement Schulten's algorithm in C++\&. 
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "std::vector< double > \fBWignerSymbols::wigner3j\fP (double l2, double l3, double m1, double m2, double m3)"
+.br
+.ti -1c
+.RI "double \fBWignerSymbols::wigner3j\fP (double l1, double l2, double l3, double m1, double m2, double m3)"
+.br
+.ti -1c
+.RI "double \fBWignerSymbols::wigner3j_auxA\fP (double l1, double l2, double l3, double m1, double m2, double m3)"
+.br
+.ti -1c
+.RI "double \fBWignerSymbols::wigner3j_auxB\fP (double l1, double l2, double l3, double m1, double m2, double m3)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBWignerSymbols::wigner6j\fP (double l2, double l3, double l4, double l5, double l6)"
+.br
+.ti -1c
+.RI "double \fBWignerSymbols::wigner6j\fP (double l1, double l2, double l3, double l4, double l5, double l6)"
+.br
+.ti -1c
+.RI "double \fBWignerSymbols::wigner6j_auxA\fP (double l1, double l2, double l3, double l4, double l5, double l6)"
+.br
+.ti -1c
+.RI "double \fBWignerSymbols::wigner6j_auxB\fP (double l1, double l2, double l3, double l4, double l5, double l6)"
+.br
+.ti -1c
+.RI "double \fBWignerSymbols::clebschGordan\fP (double l1, double l2, double l3, double m1, double m2, double m3)"
+.br
+.in -1c
+.in -1c
+.SH "Detailed Description"
+.PP 
+Defines utility functions for the evaluation of Wigner-3j and -6j symbols\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Joey Dumont joey.dumont@gmail.com
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+2013-08-16
+.RE
+.PP
+We compute the Wigner-3j and -6j symbols f(L1) = ( L1 L2 L3) (-M2-M3 M2 M3) for all allowed values of L1, the other parameters being held fixed\&. The algorithm is based on the work by Schulten and Gordon\&. K\&. Schulten, 'Exact recursive evaluation of 3j- and 6j-coefficients for quantum-mechanical coupling of angular momenta,' J\&. Math\&. Phys\&. 16, 1961 (1975)\&. K\&. Schulten and R\&. G\&. Gordon, 'Recursive evaluation of 3j and 6j coefficients,' Comput\&. Phys\&. Commun\&. 11, 269–278 (1976)\&. 
+.SH "Function Documentation"
+.PP 
+.SS "double WignerSymbols::clebschGordan (double l1, double l2, double l3, double m1, double m2, double m3)\fC [inline]\fP"
+Computes the Clebsch-Gordan coefficient by relating it to the Wigner 3j symbol\&. It sometimes eases the notation to use the Clebsch-Gordan coefficients directly\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for pairinteraction from the source code\&.
