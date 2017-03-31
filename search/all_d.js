@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['power_5fkernel',['power_kernel',['../class_numerov.html#aac0e95cf7c77162c82d8e51e16bb423c',1,'Numerov::power_kernel()'],['../class_whittaker.html#a404d4b31d2188040fa2a24ae0ce329a5',1,'Whittaker::power_kernel()']]]
+  ['normscale',['normscale',['../namespacepairinteraction_1_1utils.html#a9bbc75a7b7077846ba5775f7ffde0d16',1,'pairinteraction::utils']]],
+  ['numprocessors',['numprocessors',['../classpairinteraction_1_1app_1_1MainWindow.html#ae50cb310ac798e249c3d287a35cecbe8',1,'pairinteraction::app::MainWindow']]]
 ];

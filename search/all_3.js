@@ -1,4 +1,29 @@
 var searchData=
 [
-  ['dx',['dx',['../class_numerov.html#a506d0c2ccd0b4c918da6e4e09eef2fea',1,'Numerov::dx()'],['../class_whittaker.html#aaab5dd623e42f2f7458629e714ecbdc8',1,'Whittaker::dx()']]]
+  ['c',['C',['../namespacepairinteraction_1_1unitmanagement.html#ade59eae3f38b8000044b4fd835559902',1,'pairinteraction::unitmanagement']]],
+  ['cachedir',['cachedir',['../classpairinteraction_1_1utils_1_1Wignerd.html#aab11bd3cbac81f013cd221c1591ea331',1,'pairinteraction::utils::Wignerd']]],
+  ['cachupdatedict',['cachupdatedict',['../classpairinteraction_1_1utils_1_1Wignerd.html#ae1dc1d22a9d180e164c68a19ff524c95',1,'pairinteraction::utils::Wignerd']]],
+  ['calc',['calc',['../classpairinteraction_1_1utils_1_1Wignerd.html#a5d1704ee66ecb1d95a895e25218bcfd3',1,'pairinteraction::utils::Wignerd']]],
+  ['changecachedirectory',['changeCacheDirectory',['../classpairinteraction_1_1app_1_1MainWindow.html#accebe30275b240e9ec5a34efb5b9b5cd',1,'pairinteraction::app::MainWindow']]],
+  ['checkfordata',['checkForData',['../classpairinteraction_1_1app_1_1MainWindow.html#a791671f5d4e938e31e2e2afbb4a9c1cb',1,'pairinteraction::app::MainWindow']]],
+  ['clear',['clear',['../classpairinteraction_1_1worker_1_1Worker.html#ab183af95ea13db197a601a27d4c36530',1,'pairinteraction::worker::Worker']]],
+  ['clearcache',['clearCache',['../classpairinteraction_1_1app_1_1MainWindow.html#a1f629d6b316a6d6430b6dcfd9d4dc721',1,'pairinteraction::app::MainWindow']]],
+  ['closeevent',['closeEvent',['../classpairinteraction_1_1app_1_1MainWindow.html#a544ce7a9bfb82d1c094442b9212e9cac',1,'pairinteraction::app::MainWindow']]],
+  ['colormap_5fbuffer_5fminidx_5ffield',['colormap_buffer_minIdx_field',['../classpairinteraction_1_1app_1_1MainWindow.html#aba942623c86090b253fc889feb4f6427',1,'pairinteraction::app::MainWindow']]],
+  ['colormap_5fbuffer_5fminidx_5fpotential',['colormap_buffer_minIdx_potential',['../classpairinteraction_1_1app_1_1MainWindow.html#a16760c3dc39c8388b95dcd48a4d7780a',1,'pairinteraction::app::MainWindow']]],
+  ['complex_5fnot_5freal',['complex_not_real',['../classpairinteraction_1_1loader_1_1BinaryLoader.html#ac3acc32752c96582ca32a220c770533c',1,'pairinteraction::loader::BinaryLoader']]],
+  ['confparser_2ecpp',['ConfParser.cpp',['../ConfParser_8cpp.html',1,'']]],
+  ['confparser_2eh',['ConfParser.h',['../ConfParser_8h.html',1,'']]],
+  ['converter_5fau',['converter_au',['../classpairinteraction_1_1unitmanagement_1_1Quantity.html#a392bb900aba708063acd4823045d37c3',1,'pairinteraction::unitmanagement::Quantity']]],
+  ['converter_5fbfield',['converter_bfield',['../classpairinteraction_1_1app_1_1MainWindow.html#a7f617c41f2b29f2c26aa752457a502c0',1,'pairinteraction::app::MainWindow']]],
+  ['converter_5fefield',['converter_efield',['../classpairinteraction_1_1app_1_1MainWindow.html#af4821fc7680d145f0c56c6a0105d25de',1,'pairinteraction::app::MainWindow']]],
+  ['converter_5flength',['converter_length',['../classpairinteraction_1_1app_1_1MainWindow.html#a13a9d95ed5fee644e82e643b291389de',1,'pairinteraction::app::MainWindow']]],
+  ['converter_5fuu',['converter_uu',['../classpairinteraction_1_1unitmanagement_1_1Quantity.html#a529438f21c19cd1fd46ec0f8f9ee0ca3',1,'pairinteraction::unitmanagement::Quantity']]],
+  ['converter_5fx',['converter_x',['../classpairinteraction_1_1app_1_1MainWindow.html#a1e8c172c9582f259c48e7ee427df8294',1,'pairinteraction::app::MainWindow']]],
+  ['converter_5fy',['converter_y',['../classpairinteraction_1_1app_1_1MainWindow.html#a6dae7182bb28e6d8df16c83ef7b57b68',1,'pairinteraction::app::MainWindow']]],
+  ['criticalsignal',['criticalsignal',['../classpairinteraction_1_1worker_1_1Worker.html#ae9d663f6389327368f3ea4d940112e34',1,'pairinteraction::worker::Worker']]],
+  ['csc_5fhappend',['csc_happend',['../namespacepairinteraction_1_1utils.html#aeb102733dc9511447e504277ccaf9cde',1,'pairinteraction::utils']]],
+  ['csr_5fkeepmax',['csr_keepmax',['../namespacepairinteraction_1_1utils.html#a9649714345e7bd3d3193c3ebe6631d0e',1,'pairinteraction::utils']]],
+  ['csr_5fnot_5fcsc',['csr_not_csc',['../classpairinteraction_1_1loader_1_1BinaryLoader.html#ac409c4e584691fc4bea209d9f0fdaed7',1,'pairinteraction::loader::BinaryLoader']]],
+  ['csr_5fvappend',['csr_vappend',['../namespacepairinteraction_1_1utils.html#a1bb8f94091738f65efd1247c61410ccc',1,'pairinteraction::utils']]]
 ];

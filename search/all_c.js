@@ -1,7 +1,24 @@
 var searchData=
 [
-  ['n',['n',['../class_quantum_defect.html#a37e09d7e28751618b98208bd5ff8766e',1,'QuantumDefect']]],
-  ['no_5fdefect',['no_defect',['../structno__defect.html',1,'']]],
-  ['nstar',['nstar',['../class_quantum_defect.html#a4d36b16c1460dced9dd5b16920c8dabd',1,'QuantumDefect']]],
-  ['numerov',['Numerov',['../class_numerov.html',1,'Numerov'],['../class_numerov.html#abadc362f1d57523047c1ffe4759b8230',1,'Numerov::Numerov()']]]
+  ['magnitude',['magnitude',['../classpairinteraction_1_1unitmanagement_1_1Quantity.html#a90f6f863329fd27e260a7c262f5160dd',1,'pairinteraction::unitmanagement::Quantity']]],
+  ['main',['main',['../namespacepairinteraction_1_1app.html#ac5d7a4fb63c2879c3cb1e5c49c202633',1,'pairinteraction::app']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainmatrixelement_2ecpp',['mainMatrixelement.cpp',['../mainMatrixelement_8cpp.html',1,'']]],
+  ['mainwindow',['MainWindow',['../classpairinteraction_1_1app_1_1MainWindow.html',1,'pairinteraction::app']]],
+  ['manualrangex',['manualRangeX',['../classpairinteraction_1_1app_1_1MainWindow.html#a419e4c55122138ac4bd5bbeb26aa7b97',1,'pairinteraction::app::MainWindow']]],
+  ['manualrangey',['manualRangeY',['../classpairinteraction_1_1app_1_1MainWindow.html#a76196466b7d333cccf857661150ff10c',1,'pairinteraction::app::MainWindow']]],
+  ['matgroup',['matgroup',['../classpairinteraction_1_1app_1_1MainWindow.html#acf72d3149ced7f67c1c586e91df47572',1,'pairinteraction::app::MainWindow']]],
+  ['matrixelements_2ecpp',['MatrixElements.cpp',['../MatrixElements_8cpp.html',1,'']]],
+  ['matrixelements_2eh',['MatrixElements.h',['../MatrixElements_8h.html',1,'']]],
+  ['maxe',['maxE',['../classpairinteraction_1_1app_1_1MainWindow.html#a4f0962dfb5f1f2bc57dc3afbae62f503',1,'pairinteraction::app::MainWindow']]],
+  ['message',['message',['../classpairinteraction_1_1worker_1_1Worker.html#affa9c8d5788e6aa1f2e2e6af7e512692',1,'pairinteraction::worker::Worker']]],
+  ['metaclass',['metaclass',['../classmetaclass.html',1,'']]],
+  ['mine',['minE',['../classpairinteraction_1_1app_1_1MainWindow.html#a3bd04cd590b80ca03b911ea68c473e3c',1,'pairinteraction::app::MainWindow']]],
+  ['missinggroup',['missinggroup',['../classpairinteraction_1_1app_1_1MainWindow.html#a83905dc057f06d82a0986dad4beea63a',1,'pairinteraction::app::MainWindow']]],
+  ['momentslabels',['momentslabels',['../classpairinteraction_1_1app_1_1MainWindow.html#a166618d26a037e32f3c6c83530b8c1fb',1,'pairinteraction::app::MainWindow']]],
+  ['momentumcolors',['momentumcolors',['../classpairinteraction_1_1app_1_1MainWindow.html#a4bbee94085249cd286bccfef32cc715d',1,'pairinteraction::app::MainWindow']]],
+  ['momentummat',['momentummat',['../classpairinteraction_1_1app_1_1MainWindow.html#a3e4ac2abc6ad3bd2d27d3cf489c88f59',1,'pairinteraction::app::MainWindow']]],
+  ['momentumstrings',['momentumstrings',['../classpairinteraction_1_1app_1_1MainWindow.html#ace152a2d97602cbf5338c5ddd667f956',1,'pairinteraction::app::MainWindow']]],
+  ['multiline',['MultiLine',['../classpairinteraction_1_1pyqtgraphadditions_1_1MultiLine.html',1,'pairinteraction::pyqtgraphadditions']]],
+  ['mutablemapping',['MutableMapping',['../classMutableMapping.html',1,'']]]
 ];

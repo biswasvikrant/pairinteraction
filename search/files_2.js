@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['wignersymbols_2dcpp_2eh',['wignerSymbols-cpp.h',['../wigner_symbols-cpp_8h.html',1,'']]],
-  ['wignersymbols_2dfortran_2eh',['wignerSymbols-fortran.h',['../wigner_symbols-fortran_8h.html',1,'']]]
+  ['basisnames_2ecpp',['Basisnames.cpp',['../Basisnames_8cpp.html',1,'']]],
+  ['basisnames_2eh',['Basisnames.h',['../Basisnames_8h.html',1,'']]]
 ];

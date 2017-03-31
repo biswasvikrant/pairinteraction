@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['clebschgordan',['clebschGordan',['../wigner_symbols-cpp_8h.html#a1cbd71e7e5319f7b54164c27c67c4a8b',1,'WignerSymbols']]],
-  ['clebschgordan_5ff',['clebschGordan_f',['../wigner_symbols-fortran_8h.html#ad2f7b45853c916d93c59ed52c0b3d3b4',1,'WignerSymbols']]]
+  ['abortcalculation',['abortCalculation',['../classpairinteraction_1_1app_1_1MainWindow.html#aba6275846fa0b0509cb2f5baaa019a35',1,'pairinteraction::app::MainWindow']]],
+  ['adjustpairlimits',['adjustPairlimits',['../classpairinteraction_1_1app_1_1MainWindow.html#a99a5c370b41caacc095f90b1e584b0ff',1,'pairinteraction::app::MainWindow']]],
+  ['autosetsymmetrization',['autosetSymmetrization',['../classpairinteraction_1_1app_1_1MainWindow.html#a9ebc0532802e5cbe7570e7ef198b63c0',1,'pairinteraction::app::MainWindow']]]
 ];
