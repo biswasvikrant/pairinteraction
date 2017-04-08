@@ -9,10 +9,11 @@ var NAVTREE =
         [ "Variables", "namespacemembers_vars.html", null ]
       ] ]
     ] ],
-    [ "Classes", null, [
-      [ "Class List", "annotated.html", "annotated" ],
+    [ "Data Structures", null, [
+      [ "Data Structures", "annotated.html", "annotated" ],
+      [ "Data Structure Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
+      [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
@@ -27,7 +28,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Basisnames_8cpp.html",
-"classpairinteraction_1_1pyqtgraphadditions_1_1PointsItem.html#aa04f4ee0fa4ecb8227013e5335414ce1"
+"classpairinteraction_1_1pyqtgraphadditions_1_1PointsItem.html#a3d9b966ae780712a16dc38dd1a752943"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

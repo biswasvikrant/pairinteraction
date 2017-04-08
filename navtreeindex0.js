@@ -53,6 +53,7 @@ var NAVTREEINDEX0 =
 "app_8py.html#adf578df5d12fa21155a9c1f8c9c0a291":[2,0,1,0,2,5],
 "app_8py_source.html":[2,0,1,0,2],
 "classMutableMapping.html":[1,0,2],
+"classes.html":[1,1],
 "classmetaclass.html":[1,0,1],
 "classpairinteraction_1_1app_1_1MainWindow.html":[1,0,0,0,0],
 "classpairinteraction_1_1app_1_1MainWindow.html#a0160d657f0be712d865eae0989fd1dfb":[1,0,0,0,0,122],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classpairinteraction_1_1pyqtgraphadditions_1_1PointsItem.html":[1,0,0,3,1],
 "classpairinteraction_1_1pyqtgraphadditions_1_1PointsItem.html#a064bad0c2fa4b8fc1e3f468d0b568341":[1,0,0,3,1,4],
 "classpairinteraction_1_1pyqtgraphadditions_1_1PointsItem.html#a1672062ce085423a054447787f64e9b9":[1,0,0,3,1,5],
-"classpairinteraction_1_1pyqtgraphadditions_1_1PointsItem.html#a2a93239118c9f345f86a46a5eb73d3e4":[1,0,0,3,1,6],
-"classpairinteraction_1_1pyqtgraphadditions_1_1PointsItem.html#a3d9b966ae780712a16dc38dd1a752943":[1,0,0,3,1,7]
+"classpairinteraction_1_1pyqtgraphadditions_1_1PointsItem.html#a2a93239118c9f345f86a46a5eb73d3e4":[1,0,0,3,1,6]
 };
